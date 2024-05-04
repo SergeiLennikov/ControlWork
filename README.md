@@ -29,3 +29,31 @@ void array(string[] myArray)
             }
         }
 ```
+### Третий этап "Функция **symbol**"
+> 1.Самый первый цикл **for** перебирает массив и считает кол-во элементов массива с тремя и менее символами.
+<br>2. Второй цикл **for** создает массив нужной размерностью и вносит данные из введенного массива в результат функсции.
+<br>3. Функции **if** проверяют верны ли условия.
+```
+string[] symbol(string[] myArray)
+{
+    int n = 0;
+    for (int i = 0; i < myArray.Length; i++)
+    {
+        if (myArray[i].Length <= 3)
+        {
+            n++;
+        }
+    }
+    string[] sim = new string[n];
+    int k = 0;
+    for (int i = 0; i < myArray.Length; i++)
+    {
+        if (myArray[i].Length <= 3)
+        {
+            sim[k] = myArray[i];
+            k++;
+        }
+    }
+    return sim;
+}
+```
