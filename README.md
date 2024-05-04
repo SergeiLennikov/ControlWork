@@ -131,3 +131,7 @@ class Program
     }
 }
 ```
+
+![Блок-Схема](blockshem.png)
+
+Ссылка на GitHub [github] (https://github.com/SergeiLennikov/ControlWork "Нажми на меня")
